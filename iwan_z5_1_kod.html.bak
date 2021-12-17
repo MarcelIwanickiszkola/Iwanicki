@@ -1,0 +1,27 @@
+<html>
+<body>
+<textarea>
+<html>
+<head>
+<title>styl zewnetrzne</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- importowany -->
+ <style>
+  @import url("iwan_z5_1.css ");
+ </style>
+</head>
+<body bgcolor="silver">
+ <h1> Marcel Iwanicki</h1>
+ <p> Dzien Dobry</p>
+ </body>
+  <!--26.11.2021 Iwanicki-->
+</html>
+p {
+color: yellow;
+font-size: 68px;
+font-weight: bolder;
+}
+/*  26.11.2021 Iwanicki */
+</textarea>
+</body>
+</html>
