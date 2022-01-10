@@ -1,0 +1,34 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+</head>
+<body>
+<table width=95% border="1" align="center">
+ <tr>
+ <td width=18% align=center>
+ <p>Teoria</p>
+ <br>
+ <a href="rodzaje.html"  target="strony">Rodzaje Petli</a>
+ </td>
+ <br>
+ <td align=center><iframe width=650 height=650 name="strony" src="start.html" border="0"></iframe>
+ </td>
+ <td width=18% align=center>
+ <img src="https://cdn.discordapp.com/attachments/927823740262285372/927826616510455828/marcel.png">
+ <br>
+  <a href="petla.html"  target="strony">Definicja Petli</a>
+  <br>
+  <a href="cplus.html"  target="strony">C++</a>
+  <br>
+  <a href="z27.html"  target="strony">z27 Kod</a>
+  <br>
+  <a href="z27ss.html"  target="strony">z27 zrzut ekranu</a>
+  <br>
+  <a href="z28.html"  target="strony">z28</a>
+  <br>
+  <a href="z28ss.html"  target="strony">z28 zrzut ekranu</a>
+ </td>
+ </tr>
+</table>
+</body>
+</html>

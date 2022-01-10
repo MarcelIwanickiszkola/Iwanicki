@@ -1,0 +1,15 @@
+<html>
+ <head>
+ <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+ </head>
+<body>
+<style>
+h1 {
+  color: red;
+  font-size: 29px;
+}
+</style>
+ <h1 align="center">Marcel Iwanicki</h1>
+ <marquee bgcolor="red">Pozdrowienia</marquee>
+</body>
+</html>

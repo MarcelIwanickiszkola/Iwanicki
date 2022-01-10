@@ -1,0 +1,33 @@
+<body>
+<p>
+#include <iostream>
+<br>
+#include <math.h>
+<br>
+#include <cstdlib>
+<br>
+using namespace std;
+<br>
+int main(int argc, char** argv) {
+<br>
+ for (int i=12; i<=42; i++) {
+ <br>
+  if(i%2==0) {
+  <br>
+   cout<<(i);
+   <br>
+   cout<<("\n");
+   <br>
+   }
+   <br>
+}
+<br>
+ cout<<endl;
+ <br>
+ system("PAUSE");
+ <br>
+ return EXIT_SUCCESS;
+ 
+}
+</p>
+</body>
