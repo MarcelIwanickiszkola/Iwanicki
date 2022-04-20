@@ -1,0 +1,79 @@
+<head>
+</head>
+<body>
+
+<h3>1)składnia teoretyczna definiowania klasy  obramowania (może być tabele jednokomórkowa),</h3>
+<p> selektor.klasa { cecha: wartość }  </p>
+<h3>   2)Podaj opis dla Klasa "cecha" oraz "wartość", </h3>
+<p>   Klasa to wartość atrybutu class="..." nadanego selektorowi z poziomu języka (X)HTML.<br>
+"cecha" oraz "wartość" określają atrybuty elementu nadane poprzez style. </p>
+<h3>   3)Jaki znacznik może być selektorem? Trzy przykłady selektorów dla klas ( ze znaczeniem),   </h3>
+<p>
+Uwagi na temat nazwy klas Jako klasa należy podać dowolny pojedynczy wyraz,
+ który nie może zawierać znaków: spacji, kropki, przecinka, dwukropka, pytajnika, 
+ nawiasów, znaku równości, plusa itp. Może natomiast zawierać litery (A-Z, a-z), 
+ cyfry (0-9), myślniki ("-") i podkreślniki ("_"). Lepiej nie używać polskich liter. 
+ Nie może się on również rozpoczynać cyfrą ani myślnikiem. 
+ Jeśli koniecznie chcemy użyć "zakazanych" znaków, należy w deklaracji klasy poprzedzić je odwróconym ukośnikiem "\", np. 
+ reguła: selektor.B\&W\? { cecha: wartość } odpowiada klasie: class="B&W?".
+</p>
+<h3>   4)Podaj uwagi na temat nazwy klas: (wykonaj cały tekst, uzupełnij miejsca kropek, uzupełnienia wykonaj pismem pogrubionym, pogrubienia wykonaj z użyciem CSS)
+Nazwą może być pojedynczy wyraz., nie może on zawierać
+a)spacji
+………………………
+h)kropki
+Może zawierać:
+a)(A-Z, a-z),
+………………………
+d)cyfry od 0 do 9
+Nazwa nie może zaczynać się od cyfry albo myslnika
+Gdy chcemy użyć znaków "zakazanych" znaków, należy "\",
+</h3>
+
+<h3> 5)Jakie jest zastosowanie klas? </h3>
+<p>Deklaracja klasy jest przydatna szczególnie, jeśli na wielu stronach serwisu znajdują się 
+elementy mające takie samo formatowanie, a dodatkowo nie można dla nich posłużyć się selektorem typu,
+ ponieważ na stronie znajdują się inne znaczniki tego samego rodzaju co wybrany element, ale nie chcemy, 
+ aby i one otrzymały takie samo formatowanie.</p>
+
+ <h3>    6)Kiedy ma zastosowanie lista klas? </h3>
+ <p>Jeśli chcemy do pojedynczego elementu przypisać kilka różnych klas, należy posłużyć się poleceniem:</p>
+ <h3>7)składnia teoretyczna listy klasy  obramowania (może być tabele jednokomórkowa), oraz uwagi.</h3>
+ <p>  <selektor class="klasa1 klasa2 klasa3...">...</selektor></p>
+ <h3>8)Czym są podzbiory klas. Składnia teoretyczna listy klasy  obramowania (może być tabele jednokomórkowa).</h3>
+ <p>  Istnieje możliwość określenia tzw. podzbioru klas, czyli podania, jakie klasy musi mieć 
+ jednocześnie przypisane element, aby wybrana reguła CSS miała do niego zastosowanie. Na przykład po wpisaniu: selektor.klasa1.klasa3 { cecha: wartość }</p>
+ <h3> 9)Co jest sygnałem (przesłanką), że należy zastosować klasy?</h3>
+ <p>Jeśli jakiś element, o specyficznym rodzaju formatowania, wstępuje przynajmniej raz 
+ na niektórych stronach Twojego serwisu (może to być np. główny tytuł strony), jest to znak, 
+ że dobrze byłoby umieścić w zewnętrznym arkuszu stylów deklarację jego klasy. Dzięki temu, 
+ jeśli później zdecydujemy się zmienić jego formatowanie, nie będziemy musieli modyfikować 
+ każdej ze stron, a jedynie zewnętrzny arkusz. Już na początkowym etapie projektowania serwisu, 
+ dobrze jest dokładnie obmyślić, jakie klasy mogą okazać się użyteczne. Im więcej deklaracji klas - 
+ odnoszących się do powtarzalnych elementów - umieścisz w zewnętrznym arkuszu stylów, tym 
+ szybciej przebiegnie późniejsza ewentualna modyfikacja stron! Dobrym pomysłem jest również 
+ wstawianie komentarza przed każdą deklaracją klasy w arkuszu (znaki: /* ... */), w którym opisuje 
+ się jej przeznaczenie. Po jakimś czasie w Twoim arkuszu stylów może znaleźć się tyle klas, że
+ zapomnisz, do jakich elementów się one odnosiły.
+ Wtedy właśnie bardzo przydatny może się okazać wpisany wcześniej komentarz.</p>
+
+ <h3> 10)Kiedy i z jakiego powodu powinny być planowane klasy dla wykonywanej strony?</h3>
+ <p>Przykład definiowania i wywołania klasy:
+definicja arkusza styli
+p.przyklad_klasa { color: red }
+wywołanie
+<p class="przyklad_klasa">To jest akapit.</p></p>
+<h3>11)Jaki jest cel stosowania komentarzy podczas definiowania klas?</h3>
+
+ 
+
+
+
+
+
+
+
+
+
+
+</body>

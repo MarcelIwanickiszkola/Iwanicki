@@ -1,0 +1,64 @@
+p#akapit_1 {
+	font-size: 1cm;
+	color: red;
+}
+
+p#akapit_2 {
+	color: blue;
+}
+
+p#akapit_3 {
+	color: #778899;
+	font-family: Arial, sans-serif;
+	text-decoration: overline;
+	font-style: italic;
+	font-variant: small-caps;
+	text-indent: 2cm;
+	line-height: 1cm;
+	word-spacing: 12px;
+	letter-spacing: 5ex;
+}
+
+p#es1 {
+	font-size: 2em;
+}
+
+p#es2 {
+	font-size: 4em;
+}
+
+p#es3 {
+	font-size: 5em;
+}
+
+p#akapit_4 {
+	color: #FF1493;
+	font-family: Arial, sans;
+	text-decoration: line-through;
+	font-style: oblique;
+	font-variant: small-caps;
+	text-indent: 25mm;
+	line-height: 15mm;
+	word-spacing: 10pt;
+	letter-spacing: 5mm;
+}
+
+p#z1 {
+	font-size: 30px;
+}
+
+p#z2 {
+	font-size: 0.5in;
+}
+
+p#z3 {
+	font-size: 1em;
+}
+
+p#upper {
+	text-transform: uppercase;
+}
+
+p#cap {
+	text-transform: capitalize;
+}
