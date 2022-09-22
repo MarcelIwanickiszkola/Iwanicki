@@ -1,0 +1,22 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function show_prompt()
+ {
+ var name=prompt("napisz imie i nazwisko","np. Kuba Kowalski");
+ if (name!=null && name!="")
+ {
+ document.write("Hej " + name + "! zycze ci milego dnia");
+ }
+ } 
+ function okno_zamknij_iwa()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <input type="button" onclick="show_prompt()" value="pokaz prompt box" />
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_iwa()"/>
+ </body>
+</html>

@@ -1,0 +1,33 @@
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_iwanicki() 
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+<textarea cols="200" rows="45">
+
+    <html>
+        <body>
+        <div style="color:green;font-size:42px;">
+        <script language="JavaScript">
+        var D_iwa1=prompt("D1=","");
+        var D_iwa2=prompt("D2=","");
+        var ilosc_dni;
+        var ilosc_sekund;
+        var D_iwa1=parseFloat(D_iwa1);
+        var D_iwa2=parseFloat(D_iwa2);
+        ilosc_dni=D_iwa1-D_iwa2;
+        ilosc_sekund=(ilosc_dni*24)*(60)*(60);
+        document.write("ilosc sekund wynosi "+ilosc_sekund+"<br>");
+        </script>
+        </div>
+        </body>
+        </html> 
+        
+
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_iwanicki()"/>
+</body>
