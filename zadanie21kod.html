@@ -1,0 +1,64 @@
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_iwanicki() 
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+<textarea cols="200" rows="45">
+
+    <html> 
+<head> 
+ <script language="JavaScript">
+function dlug(d,x)
+{
+ d_iwa=parseFloat(d)
+ x_iwa=parseFloat(x)
+ dlug_iwa1=Math.pow(d_iwa,2) + Math.pow(x_iwa,2)
+ dlug_iwa2=Math.sqrt(dlug_iwa1)
+ document.getElementsByName('drab')[0].value=dlug_iwa2.toFixed(2);
+ alert("Drabina="+dlug_iwa2.toFixed(2));
+ pokaz1.innerHTML="Drabina="+dlug_iwa2.toFixed(2)+"<br>"; 
+}
+function nach(d,x)
+{
+ d_iwa=parseFloat(d)
+ x_iwa=parseFloat(x)
+ nach1_iwa=Math.atan2(d_iwa,x_iwa)
+ nach2_iwa=180*nach1_iwa/Math.PI
+ document.getElementsByName('alf')[0].value=nach2_iwa.toFixed(2);
+ alert("Alfa="+nach2_iwa.toFixed(2));
+ pokaz2.innerHTML="Alfa="+nach2_iwa.toFixed(2)+"<br>"; 
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie odległości od drabiny i kąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="dlug(this.d.value,this.x.value); 
+nach(this.d.value,this.x.value);return false"> 
+ Podaj d=
+ <input size="6" name="d">
+ Podaj x=
+ <input size="6" name="x">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Drabina=
+ <input size="6" name="drab">
+ Alfa=
+ <input size="6" name="alf">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
+        
+
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_iwanicki()"/>
+</body>

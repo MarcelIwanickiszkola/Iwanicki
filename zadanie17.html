@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Użycie fukcji </title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:50px;">
+<script language="JavaScript">
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+function suma_iwa(a,b) {
+return a + b;
+}
+function odejmowanie_iwa(a,b) {
+return a - b;
+}
+function mnozenie_iwa(a,b) {
+return a * b;
+}
+function od_kwadratu_iwa(a,b) {
+return Math.pow(a,2);
+return Math.pow(b,2);
+}
+function reszta_z_dzielenia_a_przez_b_iwa(a,b) {
+return a % b;
+}
+document.write("suma="+suma_iwa(a,b)+"<br>"+
+"odejmowanie="+odejmowanie_iwa(a,b)+"<br>"+
+"mnozenie="+mnozenie_iwa(a,b)+"<br>"+
+"od kwadratu="+od_kwadratu_iwa(a)+" i "+
+od_kwadratu_iwa(b)+"<br>"+
+"reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_iwa(a,b)+"<br>");
+</script>
+</div>
+</body>
+</html>
