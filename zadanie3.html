@@ -1,57 +1,63 @@
-<DOCTYPE html>
 <html>
-<head>
-<Meta charset="utf-8">
-<title> Zadanie 3 </title>
-<script language="JavaScript">
- function okno_zamknij_iwa()
- {
- window.close()
- }
-</script>
-</head>
-<body> 
-<ol type="1">
-<h1> <li> Rodzaje okienek: </h1>
-<ul>
-<li>   Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK 
-<li>  Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną
-następnie do programu. 
-<li>  Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm) 
-</ul>
-<h1> <li> Konwersja zmiennych </h1>
- Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków dlatego konieczna jest
-konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia. 
-<h1> Rodzaje konwersji zmiennych </h1>
-<ol type="1">
- <li> <u> parseFloat(zmienna) </u> - konwersja zmiennej do typu float 
- <li> <u> parseInt(zmienna) </u> - konwersja zmiennej do typu int (liczbowego) 
- <li> <u> toString(zmienna) </u> - konwersja zmiennej do typu łańcuchowego  
-</ol>
-<h1> <li> Typy zmiennych w Javascript </h1>
-<ol type="1">
-<li> Number -> Typ liczbowy 
-<ul type="circle">
-<h5><li> zmienna całkowite </h5>
-<h5><li>zmiennoprzecinkowe </h5>
-</ul>
- <li> String -> Typ tekstowy 
- <li> Boolea -> Typ logiczny 
- <li> Null -> Pusta zawartość 
- <li> Undefined -> Typ niezidentyfikowany 
- <li> Object -> Obiekt 
-</ol>
-<h1> <li>  Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad: </h1>
-<ol type="1">
- <li> Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez
-polskich znaków), cyfry oraz "$" i "_". 
-<h2> Przykłady </h2>
-<h4> Poprawne nazwy zmiennych: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz
-Błędne nazwy zmiennych: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz,
-wysokość, imie+nazwisko. </h4>
- <li> Wielkość liter ma znaczenie.
-Rekord i rekord to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie
-początkujących programistów 
- <li>  Należy nie używać słów kluczowych JavaScript jako nazw zmiennych. 
-<input type="button" value="zamknij okno" onclick="okno_zamknij_iwa()"/>
+<body>
+<div style="color:#27299b;font-size:45px;">
+ <script language="JavaScript">
+var a_iwa=prompt("a=","");
+var a=parseFloat(a_iwa);
+var b_iwa=prompt("b=","");
+var b=parseFloat(b_iwa);
+var c_iwa=prompt("c=","");
+var c=parseFloat(c_iwa);
 
+p = ((-b)/(2*a))
+delta = (b*b-4*a*c)
+q = ((-delta) / (4*a))
+sqrt = (Math.sqrt(delta))
+x1 = ((((-b)-sqrt) / (2*a)))
+x2 = ((((-b)+sqrt) / (2*a)))
+
+p_iwa = p.toFixed(2)
+delta_iwa = delta.toFixed(2)
+q_iwa = q.toFixed(2)
+sqrt_iwa = sqrt.toFixed(2)
+x1_iwa = x1.toFixed(2)
+x2_iwa = x2.toFixed(2)
+
+
+document.write("Postac ogolna : <br>");
+if (c<0) {
+    document.write(a + "x^2" + b + "x " + c + "<br>");
+}
+else {
+    document.write(a + "x^2" + b + "x + " + c + "<br>");
+}
+document.write("Postac Kanoniczna : <br>");
+if ((q_iwa<0) && (p_iwa<0)) {
+    document.write(a + "(x " + " "+ p_iwa + ")^2 "+ q_iwa+ "<br>");
+}
+else if ((q_iwa>0) && (p_iwa<0)) {
+    document.write(a + "(x " + " "+ p_iwa + ")^2 + "+ q_iwa+ "<br>");
+}
+else if ((q_iwa>0) && (p_iwa>0)) {
+    document.write(a + "(x " + " + "+ p_iwa + ")^2 + "+ q_iwa+ "<br>");
+}
+else if ((q_iwa<0) && (p_iwa>0)) {
+    document.write(a + "(x " + " + "+ p_iwa + ")^2 "+ q_iwa+ "<br>");
+}
+
+
+document.write("Postac Iloczynowa: <br>");
+if ((x1_iwa<0) && (x2_iwa<0)) {
+document.write(a + "(x " + x1_iwa + ")( x +"+ x2_iwa + ") <br>");
+}
+else if ((x1_iwa>0) && (x2_iwa<0)) {
+document.write(a + "(x -" + x1_iwa + ")( x +"+ x2_iwa + ") <br>");
+}
+else if ((x1_iwa<0) && (x2_iwa>0)) {
+document.write(a + "(x " + x1_iwa + ")( x -"+ x2_iwa + ") <br>");
+}
+else {
+document.write(a + "(x -" + x1_iwa + ")( x -"+ x2_iwa + ") <br>");
+}
+</script>
+</div>
