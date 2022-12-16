@@ -1,36 +1,91 @@
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-<title> Użycie fukcji </title>
 <meta charset="utf-8">
-</head>
-<body>
-<div style="color:navy;font-size:50px;">
-<script language="JavaScript">
-var a=parseFloat(prompt("a=",""));
-var b=parseFloat(prompt("b=",""));
-function suma_iwa(a,b) {
-return a + b;
+<title>Canvas</title>
+<script type="text/javascript">
+function rysuj() {
+var rysowanie = document.getElementById('obrazek');
+var rodzaj = rysowanie.getContext('2d');
+var rodzaj2 = rysowanie.getContext('2d');
+
+rodzaj2.beginPath();
+rodzaj2.moveTo(50,280);
+rodzaj2.quadraticCurveTo(20,220,150,280);
+rodzaj2.closePath();
+rodzaj2.strokeStyle = "green";
+rodzaj2.fillStyle = "green";
+rodzaj2.stroke();
+rodzaj2.fill();
+rodzaj2.beginPath();
+rodzaj2.moveTo(50,280);
+rodzaj2.quadraticCurveTo(20,340,150,280);
+rodzaj2.closePath();
+rodzaj2.strokeStyle = "green";
+rodzaj2.fillStyle = "green";
+rodzaj2.stroke();
+rodzaj2.fill();
+
+var z = 70;
+rodzaj2.beginPath();
+rodzaj2.moveTo(60+z,280);
+rodzaj2.quadraticCurveTo(190+z,220,150+z,280);
+rodzaj2.closePath();
+rodzaj2.strokeStyle = "green";
+rodzaj2.fillStyle = "green";
+rodzaj2.stroke();
+rodzaj2.fill();
+rodzaj2.beginPath();
+rodzaj2.moveTo(60+z,280);
+rodzaj2.quadraticCurveTo(190+z,340,150+z,280);
+rodzaj2.closePath();
+rodzaj2.strokeStyle = "green";
+rodzaj2.fillStyle = "green";
+rodzaj2.stroke();
+rodzaj2.fill();
+
+
+rodzaj.beginPath();
+rodzaj.moveTo(140,280);
+rodzaj.quadraticCurveTo(70,150,140,180);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle = "green";
+rodzaj.stroke();
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(140,280);
+rodzaj.quadraticCurveTo(210,150,140,180);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle = "green";
+rodzaj.stroke();
+rodzaj.fill();
+
+var x = 70;
+rodzaj.beginPath();
+rodzaj.moveTo(140,280);
+rodzaj.quadraticCurveTo(140+x,400,140,360);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle = "green";
+rodzaj.stroke();
+rodzaj.fill();
+rodzaj.beginPath();
+rodzaj.moveTo(140,280);
+rodzaj.quadraticCurveTo(0+x,400,140,360);
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle = "green";
+rodzaj.stroke();
+rodzaj.fill();
 }
-function odejmowanie_iwa(a,b) {
-return a - b;
-}
-function mnozenie_iwa(a,b) {
-return a * b;
-}
-function od_kwadratu_iwa(a,b) {
-return Math.pow(a,2);
-return Math.pow(b,2);
-}
-function reszta_z_dzielenia_a_przez_b_iwa(a,b) {
-return a % b;
-}
-document.write("suma="+suma_iwa(a,b)+"<br>"+
-"odejmowanie="+odejmowanie_iwa(a,b)+"<br>"+
-"mnozenie="+mnozenie_iwa(a,b)+"<br>"+
-"od kwadratu="+od_kwadratu_iwa(a)+" i "+
-od_kwadratu_iwa(b)+"<br>"+
-"reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_iwa(a,b)+"<br>");
 </script>
-</div>
+</head>
+<body onload="rysuj();">
+<canvas id="obrazek" width="5000" height="7000">
+Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+</canvas>
 </body>
 </html>
