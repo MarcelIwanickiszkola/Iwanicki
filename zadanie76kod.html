@@ -1,0 +1,45 @@
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_iwanicki() 
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+<textarea cols="200" rows="45">
+
+
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+    var w_iwa;
+    var w_iwa2;
+    for ( var i=10; i<=25; i++)
+    {
+    w_iwa = Math.sqrt(i);
+    w_iwa2 = Math.sqrt(i,4);
+    w_iwa = w_iwa.toFixed(2);
+    w_iwa2 = w_iwa2.toFixed(2);
+    document.write("i = "+ i +"&nbsp&nbsp&nbsp&nbsp&nbsp pierw_2("+i+") = "+ w_iwa +"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp pierw_4("+i+") = "+w_iwa2+"<br>");
+    if(i % 3 == 0)
+    {
+    alert('Dalej?');
+    }
+    }
+    </script>
+    </head>
+    <body>
+    </body>
+    </html>
+
+
+
+        
+
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_iwanicki()"/>
+</body>

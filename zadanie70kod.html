@@ -1,0 +1,42 @@
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_iwanicki() 
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+<textarea cols="200" rows="45">
+
+
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+    var x=prompt("Jaki tekst wyswietlic=","");
+    var z=prompt("Ile razy wyswietlic=","");
+    var b=parseFloat(z);
+    for ( var i=1; i<=b; i++)
+    {
+    for ( var k=1; k<=i; k++)
+    {
+    document.write("&nbsp");
+    }
+    document.write(x+"<br>");
+    }
+    </script>
+    </head>
+    <body>
+    </body>
+    </html>
+
+
+
+        
+
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_iwanicki()"/>
+</body>
