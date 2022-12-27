@@ -8,15 +8,25 @@
  {
  window.close()
  }
-var abc_iwa=prompt("Podaj liczbę","");
-var a=parseFloat(abc_iwa);
-
-for ( var i=2; i<=a; i++)
+var a_iwa = 5;
+var b_iwa = 20;
+var c_iwa = "*";
+for ( var i=1; i<=b_iwa; i++)
 {
-if (i%2==0)
-{
-document.write(i+"<br>");
+document.write("*");
 }
+document.write("<br>");
+for ( var i=1; i<=(b_iwa-2); i++)
+{
+c_iwa=c_iwa+"&nbsp&nbsp";
+}
+for ( var i=1; i<=a_iwa; i++)
+{
+document.write(c_iwa+"*<br>");
+}
+for ( var i=1; i<=b_iwa; i++)
+{
+document.write("*");
 }
 </script>
 </head>
