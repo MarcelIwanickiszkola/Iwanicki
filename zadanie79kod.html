@@ -1,0 +1,50 @@
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_iwanicki() 
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+<textarea cols="200" rows="45">
+
+
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+    <meta charset="utf-8">
+    <title> Przykład użycia pętli </title>
+    <script language="JavaScript">
+    var r_iwa=prompt("Podaj r","");
+    var r=parseFloat(r_iwa);
+    var j_iwa = 0;
+    var d_iwa = 0;
+    for (var i=Math.round(-r)-1; i<=Math.round(r)+1; i++)
+    {
+    for (var k=-r; k<=r; k++)
+    {
+    d_iwa = Math.sqrt(i*i+k*k);
+    if (d_iwa <= r)
+    {
+    j_iwa++;
+    document.write("d="+d_iwa.toFixed(2)+"<br>");
+    document.write("("+i+","+k+")"+"    ");
+    document.write("<br>");
+    }
+    }
+    }
+    document.write("<font size=\"20px\";>Ilość punktów: "+j_but);
+    </script>
+    </head>
+    <body>
+    </body>
+    </html>
+
+
+
+        
+
+</textarea>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_iwanicki()"/>
+</body>
